@@ -1,0 +1,50 @@
+.flexRowContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.usersContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .containerHead {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+  
+  .list {
+    width: 100%;
+    max-width: 50%;
+    max-height: 75vh;
+    font-size: 1.5rem;
+    background-color: #f1ffab;
+    box-shadow: 0.1rem 0.2rem 0.5rem rgba(128, 128, 128, 0.3);
+    overflow-y: scroll;
+  }
+
+  .formContainer {
+    @extend .list;
+    margin-bottom: 2rem;
+    background-color: transparent;
+    box-shadow: none;
+    overflow: inherit;
+    @extend .flexRowContainer;
+
+    .input {
+      margin-right: 0.3rem;
+      padding: 0.5rem;
+      flex: 1 1 25%;
+      border: 0.0925rem solid #e0e0e0;
+    }
+
+    .submitButton {
+      padding: 0.5rem 1rem;
+      font-size: 1.75rem;
+      color: #fff;
+      background-color: #6de25f;
+    }
+  }
+}

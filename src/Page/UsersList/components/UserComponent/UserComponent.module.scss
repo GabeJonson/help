@@ -1,0 +1,39 @@
+.flexRowContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.userData {
+  padding: 0.5rem 1rem;
+  @extend .flexRowContainer;
+  transition: 150ms;
+
+  &:hover {
+    background-color: darken(#f1ffab, 3%);
+  }
+}
+
+.userName {
+  cursor: pointer;
+}
+
+.birthWithSave {
+  @extend .flexRowContainer;
+  align-items: baseline;
+
+  .userBirth {
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+}
+
+.saveButton {
+  font-size: inherit;
+  background-color: #6de25f;
+  color: #fff;
+}
+
+.deleteButton {
+  @extend .saveButton;
+  background-color: #ff3333;
+}

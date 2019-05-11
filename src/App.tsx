@@ -1,9 +1,8 @@
 import React from 'react';
-import './App.scss';
-import styles from './App.scss.module';
+import { UsersList } from 'Page/UsersList';
 
 const App: React.FC = () => {
-  return <div className={styles.app}>Init</div>;
+  return <UsersList />;
 };
 
 export default App;
